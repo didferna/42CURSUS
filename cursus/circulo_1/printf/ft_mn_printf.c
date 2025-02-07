@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_mn_printf.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didferna <didferna@student.42barcelon      +#+  +:+       +#+        */
+/*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:40:16 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/04 14:31:46 by didferna         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:40:59 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	ft_mn_printf(const char *print , ...)
 		{
 			print++;	
 			num_of_chars += ft_delimitators(print, args);
-			else
+			if (*print != ft_delimitators)
 			{
 				num_of_chars = -1;
 				return  (num_of_chars);
@@ -37,7 +37,7 @@ int	ft_mn_printf(const char *print , ...)
 		}
 		else
 		{
-			write(1, print,1);
+			ft_putchar(print);
 			num_of_chars++;
 		}
 		print++;

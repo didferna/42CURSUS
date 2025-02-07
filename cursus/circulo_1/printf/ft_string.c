@@ -1,22 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_char.c                                          :+:      :+:    :+:   */
+/*   ft_string.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/04 14:36:40 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/07 17:41:08 by didac            ###   ########.fr       */
+/*   Created: 2025/02/04 21:51:40 by didac             #+#    #+#             */
+/*   Updated: 2025/02/07 17:41:10 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_char(va_list args)
+int	ft_string(va_list args)
 {
-	int	c;
+	const char *c;
+	int	i;
 
-	c = va_arg(args, int);
-	ft_putchar(c);
-	return (1);
+	i = 0;
+	c = va_arg(args, const char*);
+	while (c[i] != '\0')
+	{
+		ft_putchar(c[i]);
+		i++;
+	}
+	return (i);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libftprintf.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didferna <didferna@student.42barcelon      +#+  +:+       +#+        */
+/*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:48:31 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/04 14:35:33 by didferna         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:41:01 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,9 @@ typedef struct s_list
 
 int     ft_percent(va_list args);
 int     ft_delimitators(const char *print,va_list args);
+int	ft_percent(va_list args);
+int	ft_char(va_list args);
+int	ft_string(va_list args);
+int	ft_unsigned(va_list args);
 
 #endif

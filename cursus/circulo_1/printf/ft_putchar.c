@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_char.c                                          :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/04 14:36:40 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/07 17:41:08 by didac            ###   ########.fr       */
+/*   Created: 2025/02/05 21:57:05 by didac             #+#    #+#             */
+/*   Updated: 2025/02/07 17:41:27 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-int	ft_char(va_list args)
+void	ft_putchar(char c)
 {
-	int	c;
-
-	c = va_arg(args, int);
-	ft_putchar(c);
-	return (1);
+	write(1, &c, 1);
 }

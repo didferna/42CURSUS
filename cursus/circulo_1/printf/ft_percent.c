@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_percent.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didferna <didferna@student.42barcelon      +#+  +:+       +#+        */
+/*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/31 22:52:17 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/04 14:36:22 by didferna         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:41:06 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libftprintf.h"
+
 int	ft_percent(va_list args)
 {
-	int	chars;
-	chars = 0;
-	write(1, "%", 1);
-	chars++;
-	return (chars);
+	ft_putchar('%');
+	return (1);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   provafuncionaprintf.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: didferna <didferna@student.42barcelon      +#+  +:+       +#+        */
+/*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/26 19:27:28 by didferna          #+#    #+#             */
-/*   Updated: 2025/01/31 19:39:34 by didferna         ###   ########.fr       */
+/*   Updated: 2025/02/07 17:41:23 by didac            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,8 @@ int	main(void)
 	char	str1[] = "esto es str";
 	printf("%s", str);
 	printf("%s", str1);
+
+	printf("prova con u %u", -1);
 	printf("\n");
 	printf("holaaa\n");
 	int x = 10;
@@ -38,7 +40,7 @@ int	main(void)
 	
 	printf("|%4d|\n", 23);
 
-	printf("esto es % esto");
+
 
 
 
