@@ -6,7 +6,7 @@
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:48:31 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/08 19:37:21 by didferna         ###   ########.fr       */
+/*   Updated: 2025/02/08 19:21:45 by didferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ typedef struct s_list
 
 int     ft_mn_printf(const char *print , ...);
 int     ft_delimitators(const char *print,va_list args);
-int	ft_percent(void);
+int	ft_percent(const char *print);
 int	ft_char(va_list args);
 int	ft_string(va_list args);
 int	ft_unsigned(va_list args);

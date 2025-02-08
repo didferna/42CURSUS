@@ -6,13 +6,13 @@
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/05 21:57:05 by didac             #+#    #+#             */
-/*   Updated: 2025/02/07 17:41:27 by didac            ###   ########.fr       */
+/*   Updated: 2025/02/07 17:55:57 by didferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
 
-void	ft_putchar(char c)
+void	ft_putchar(const char c)
 {
 	write(1, &c, 1);
 }

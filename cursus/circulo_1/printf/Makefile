@@ -1,13 +1,14 @@
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -g
 CC = cc
 NAME = libftprintf.a
 LIBFT_DIR = libft
 LIBFT = $(LIBFT_DIR)/libft.a
 OBJS = $(SRCS:.c=.o)
-SRCS = ft_mn_printf.c ft_delimitators.c ft_percent.c ft_char.c ft_string.c ft_unsigned.c
-all: $(LIBFT_NAME) $(NAME)
+SRCS = ft_mn_printf.c ft_delimitators.c ft_percent.c ft_char.c ft_string.c ft_unsigned.c\
+       ft_putchar.c
+all: $(LIBFT) $(NAME)
 
-$(LIBFT_NAME): Makefile libftprintf.a
+$(LIBFT): Makefile libftprintf.a
 	$(MAKE) -C $(LIBFT_DIR)
 
 $(NAME): $(OBJS)  $(LIBFT) Makefile libftprintf.a

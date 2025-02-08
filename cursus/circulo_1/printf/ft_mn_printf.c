@@ -6,11 +6,12 @@
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/28 10:40:16 by didferna          #+#    #+#             */
-/*   Updated: 2025/02/07 17:40:59 by didac            ###   ########.fr       */
+/*   Updated: 2025/02/08 19:55:30 by didferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libftprintf.h"
+#include <stdio.h>
 
 int	ft_mn_printf(const char *print , ...)
 {
@@ -27,17 +28,17 @@ int	ft_mn_printf(const char *print , ...)
 	{
 		if (*print == '%')
 		{
-			print++;	
+			print++;
 			num_of_chars += ft_delimitators(print, args);
-			if (*print != ft_delimitators)
+			/*if (ft_delimitators(print, args) == 0)
 			{
-				num_of_chars = -1;
-				return  (num_of_chars);
-			}
+				write(1, print, 1);
+				print--;
+			}*/
 		}
 		else
 		{
-			ft_putchar(print);
+			write(1, print, 1);
 			num_of_chars++;
 		}
 		print++;

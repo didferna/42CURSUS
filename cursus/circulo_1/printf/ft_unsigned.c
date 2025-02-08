@@ -6,7 +6,7 @@
 /*   By: didac <didac@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/04 22:35:30 by didac             #+#    #+#             */
-/*   Updated: 2025/02/07 17:41:13 by didac            ###   ########.fr       */
+/*   Updated: 2025/02/07 18:04:24 by didferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ int	ft_unsigned(va_list args)
 		return (1);
 	}
 	if (c >= 10)
-		chars += ft_unsigned (c / 10);
+		chars += ft_unsigned (args);
 	ft_putchar(c % 10 + '0');
 	return (chars + 1);
 }
